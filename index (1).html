@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <title>Portfolio</title>
+          <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1 class="logo">Cameron</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="fas fa-home">Home</a></li>
+      <li><a href="#about-me" class="btn">About Me</a></li>
+      <li><a href="#skill" class="btn">Skills</a></li>
+      <li><a href="#projects" class="btn">Project details</a></li>
+      <li><a href="#recommendations" class="btn">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Me -->
+  <section id="about-me" class="container">
+    <div>
+      <img src="/images/Me.jpg" class="profile_image" width="50px" />
+    </div>
+    <div>
+      <h1>Hi, I'm Cameron Lail!</h1>
+      <p>I am a full stack developer with .5 years of experience in both application and presentation layers.
+      I have worked on applications and microservices deployed on IBM Cloud.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="all_skills">
+      <div class="skill">
+        <img src="/images/html.jpg" />
+        <h6>HTML</h6>
+        <p>.5 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="/images/css.jpg" />
+        <h6>CSS</h6>
+        <p>.5 years</p>
+      </div>
+      <div class="skill">
+        <img src="/images/js.jpg">
+        <h6>JavaScript</h6>
+        <p>.5 years experience</p>
+      </div>
+      <div class="skill">
+        <img src="/images/git.jpg" />
+        <h6>Git</h6>
+        <p>.5 years</p>
+      </div>
+      <div class="skill">
+        <img src="/images/py.jpg" />
+        <h6>Python</h6>
+        <p>.5 years</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+<section class="projects" id="projects">
+  <h2>
+    Projects
+  </h2>
+  <div style="clear:both;"></div>
+  
+  <div id="projects-container" class="projects-container">
+    <div class="project-card">
+      <h3>Chatbot</h3>
+      <ul>
+        <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="project-card">
+      <h3>Sentiment Analyzer</h3>
+      <ul>
+        <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="project-card">
+      <h3>Shopify website</h3>
+      <ul>
+        <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- Recommendations -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span> Cameron is a very quick learner and quickly grasps key concepts of Web development. 
+        He has a curious mind and asks the right questions. 
+        <span>&#8221;</span>
+      </div>
+        <div class="recommendation">
+    <span>&#8220;</span>Works well with teams and in  individual projects.Very reliable.
+    <span>&#8221;</span>
+  </div>
+      <div class="recommendation">
+    <span>&#8220;</span>
+    Cameron is a very quick learner and quickly grasps key concepts of Web development.
+    She got a great attitude & she is an excellent team player.
+    He has a curious mind and asks the right question.
+    He takes initiative within a team and has potentials to lead the team.
+    <span>&#8221;</span>
+  </div>
+  </section>
+
+
+  <!-- Recommendation Form -->
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>
+        <input type="text" placeholder="Name (Optional)"> <br />
+        <textarea id="new_recommendation" cols="50" rows="5" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- Pop-up Confirmation -->
+  <div class="popup" id="popup">
+    <h3>Thank you for your recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
